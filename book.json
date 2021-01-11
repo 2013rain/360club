@@ -1,0 +1,31 @@
+{
+	"plugins": [
+		"chapter-fold",
+		"tbfed-pagefooter",
+		"hide-element",
+		"back-to-top-button",
+		"code",
+		"splitter",
+		"-search",
+		"search-pro",
+		"popup",
+		"pageview-count"
+	],
+	"pluginsConfig": {
+		"tbfed-pagefooter": {
+			"copyright": "<a href=\"https://beian.miit.gov.cn\">豫ICP备15006703号-2</a>",
+			"modify_label": "当前文章修订时间：",
+			"modify_format": "YYYY-MM-DD HH:mm:ss"
+		},
+		"hide-element": {
+			"elements": [
+				".gitbook-link"
+			]
+		}
+	},
+	"variables": {
+		"blog": "http://blog.360club.net",
+		"author": "wangfuyu",
+		"email": "936466975@qq.com"
+	}
+}
