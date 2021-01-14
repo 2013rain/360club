@@ -1,4 +1,14 @@
 {
+	"title": "blog.360club.net",
+	"author": "wangfuyu",
+	"description": "事实不止你看到的那样，还是需要去探索发现的",
+	"language": "zh-hans",
+	"links": {
+		"sidebar": {
+			"我的知乎": "https://www.zhihu.com/people/fu-yun-39-30",
+			"我的博客园": "https://www.cnblogs.com/crysand/"
+		}
+	},
 	"plugins": [
 		"chapter-fold",
 		"tbfed-pagefooter",
@@ -13,7 +23,7 @@
 	],
 	"pluginsConfig": {
 		"tbfed-pagefooter": {
-			"copyright": "<a href=\"https://beian.miit.gov.cn\">豫ICP备15006703号-2</a>",
+			"copyright": "<a href=\"https://beian.miit.gov.cn\">豫ICP备15006703号-2</a>&nbsp;",
 			"modify_label": "当前文章修订时间：",
 			"modify_format": "YYYY-MM-DD HH:mm:ss"
 		},
