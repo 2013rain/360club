@@ -1,14 +1,14 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>NFS共享 · GitBook</title>
+        <title>NFS共享 · blog.360club.net</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="wangfuyu">
         
         
     
@@ -84,7 +84,7 @@
     <link rel="next" href="pptp.html" />
     
     
-    <link rel="prev" href="linux01.html" />
+    <link rel="prev" href="gitbook.html" />
     
 
     </head>
@@ -95,7 +95,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="输入并搜索" />
 </div>
 
             
@@ -106,7 +106,21 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.zhihu.com/people/fu-yun-39-30" target="_blank" class="custom-link">我的知乎</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://www.cnblogs.com/crysand/" target="_blank" class="custom-link">我的博客园</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -126,26 +140,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" >
+        <li class="chapter " data-level="1.2" data-path="../article/article.html">
             
-                <span>
-            
-                    
-                    linux
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.2.1" data-path="gitbook.html">
-            
-                <a href="gitbook.html">
+                <a href="../article/article.html">
             
                     
-                    gitbook
+                    非技术类
             
                 </a>
             
@@ -153,7 +153,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="linux01.html">
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="linux.html">
+            
+                <a href="linux.html">
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="linux01.html">
             
                 <a href="linux01.html">
             
@@ -166,7 +187,20 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3" data-path="nfs.html">
+        <li class="chapter " data-level="2.1.2" data-path="gitbook.html">
+            
+                <a href="gitbook.html">
+            
+                    
+                    gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3" data-path="nfs.html">
             
                 <a href="nfs.html">
             
@@ -179,7 +213,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="pptp.html">
+        <li class="chapter " data-level="2.1.4" data-path="pptp.html">
             
                 <a href="pptp.html">
             
@@ -192,12 +226,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="svn.md">
+        <li class="chapter " data-level="2.1.5" data-path="subversion.html">
             
-                <span>
+                <a href="subversion.html">
             
                     
                     svn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="frp.html">
+            
+                <a href="frp.html">
+            
+                    
+                    内网穿透工具-frp
             
                 </a>
             
@@ -210,6 +257,19 @@
             
         </li>
     
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    杂谈
+            
+                </span>
+            
+
+            
+        </li>
+    
 
     
 
@@ -217,7 +277,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -268,23 +328,9 @@ cat /etc/exports
 <pre><code>mkdir  -p /data/nfs  
 chown -R nfsnobody:nfsnobody  /data/nfs`
 </code></pre></li>
-<li><p>server&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
-</li>
-<li><ul>
-<li>gitbook init</li>
-<li>gitbook install</li>
-<li>gitbook build &#x9879;&#x76EE;&#x4F4D;&#x7F6E;  &#x751F;&#x6210;&#x4F4D;&#x7F6E;</li>
 </ul>
-</li>
-<li><p>&#x90E8;&#x7F72;web</p>
-<ul>
-<li>&#x9759;&#x6001;&#x90E8;&#x7F72;</li>
-<li>&#x7AEF;&#x53E3;&#x6620;&#x5C04; </li>
-</ul>
-</li>
-</ul>
-<footer class="page-footer"><span class="copyright"><a href="https://beian.miit.gov.cn" target="_blank">&#x8C6B;ICP&#x5907;15006703&#x53F7;-2</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x5F53;&#x524D;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2021-01-13 22:31:57
+<footer class="page-footer"><span class="copyright"><a href="https://beian.miit.gov.cn" target="_blank">&#x8C6B;ICP&#x5907;15006703&#x53F7;-2</a>&#xA0; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x5F53;&#x524D;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-01-14 21:52:39
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -313,7 +359,7 @@ chown -R nfsnobody:nfsnobody  /data/nfs`
 
             
                 
-                <a href="linux01.html" class="navigation navigation-prev " aria-label="Previous page: 旧笔记本做个人服务器01">
+                <a href="gitbook.html" class="navigation navigation-prev " aria-label="Previous page: gitbook">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -329,7 +375,7 @@ chown -R nfsnobody:nfsnobody  /data/nfs`
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"NFS共享","level":"1.2.3","depth":2,"next":{"title":"pptp-vpn","level":"1.2.4","depth":2,"path":"linux/pptp.md","ref":"linux/pptp.md","articles":[]},"previous":{"title":"旧笔记本做个人服务器01","level":"1.2.2","depth":2,"path":"linux/linux01.md","ref":"linux/linux01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"blog":"http://blog.360club.net","author":"wangfuyu","email":"936466975@qq.com"},"plugins":["chapter-fold","tbfed-pagefooter","hide-element","back-to-top-button","code","splitter","-search","search-pro","popup","pageview-count"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"<a href=\"https://beian.miit.gov.cn\">豫ICP备15006703号-2</a>","modify_label":"当前文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/nfs.md","mtime":"2021-01-13T14:31:57.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-14T01:12:48.529Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NFS共享","level":"2.1.3","depth":2,"next":{"title":"pptp-vpn","level":"2.1.4","depth":2,"path":"linux/pptp.md","ref":"./linux/pptp.md","articles":[]},"previous":{"title":"gitbook","level":"2.1.2","depth":2,"path":"linux/gitbook.md","ref":"./linux/gitbook.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","tbfed-pagefooter","hide-element","back-to-top-button","code","splitter","-search","search-pro","popup","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"<a href=\"https://beian.miit.gov.cn\">豫ICP备15006703号-2</a>&nbsp;","modify_label":"当前文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"wangfuyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"blog":"http://blog.360club.net","author":"wangfuyu","email":"936466975@qq.com"},"title":"blog.360club.net","language":"zh-hans","links":{"sidebar":{"我的知乎":"https://www.zhihu.com/people/fu-yun-39-30","我的博客园":"https://www.cnblogs.com/crysand/"}},"gitbook":"*","description":"事实不止你看到的那样，还是需要去探索发现的"},"file":{"path":"linux/nfs.md","mtime":"2021-01-14T13:52:39.064Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-14T13:52:46.645Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

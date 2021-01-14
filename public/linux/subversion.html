@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>gitbook · blog.360club.net</title>
+        <title>svn · blog.360club.net</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -81,10 +81,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="nfs.html" />
+    <link rel="next" href="frp.html" />
     
     
-    <link rel="prev" href="linux01.html" />
+    <link rel="prev" href="pptp.html" />
     
 
     </head>
@@ -187,7 +187,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.2" data-path="gitbook.html">
+        <li class="chapter " data-level="2.1.2" data-path="gitbook.html">
             
                 <a href="gitbook.html">
             
@@ -226,7 +226,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.5" data-path="subversion.html">
+        <li class="chapter active" data-level="2.1.5" data-path="subversion.html">
             
                 <a href="subversion.html">
             
@@ -300,7 +300,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >gitbook</a>
+        <a href=".." >svn</a>
     </h1>
 </div>
 
@@ -315,24 +315,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="gitbook">gitbook</h4>
+                                <h1 id="subversion">subversion</h1>
 <ul>
-<li>&#x5B89;&#x88C5;<ul>
-<li>windows&#x5B89;&#x88C5;</li>
-<li>linux&#x5B89;&#x88C5;</li>
+<li><p>&#x5B89;&#x88C5;</p>
+</li>
+<li><p>&#x914D;&#x7F6E;&#x4ED3;&#x5E93;</p>
+<ul>
+<li><p>svnadmin create &#x4ED3;&#x5E93;&#x4F4D;&#x7F6E;</p>
+</li>
+<li><p>&#x7ED3;&#x5408;apache&#x8FDB;&#x884C;&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x8BBF;&#x95EE;</p>
+<blockquote>
+<p>vim /etc/httpd/conf.d/subversion.conf</p>
+<pre><code class="lang-nginx">&lt;Location /unicorn&gt;
+    DAV svn
+    SVNPath /rain_data/svn/svnrepos/unicorn
+    SVNListParentPath on
+    AuthType Basic
+    AuthName &quot;wangfuyu svn server&quot;
+    AuthUserFile /rain_data/svn/unicorn_users.conf
+    #AuthUserFile /rain_data/svn/svnrepos/rain/conf/passwd
+    Require valid-user
+    AuthzSVNAccessFile  /rain_data/svn/unicorn_access.conf
+    #AuthzSVNAccessFile  /rain_data/svn/svnrepos/rain/conf/authz
+&lt;/Location&gt;
+</code></pre>
+<p>service httpd restart</p>
+</blockquote>
+</li>
 </ul>
 </li>
-<li>&#x4F7F;&#x7528;<ul>
-<li>gitbook init</li>
-<li>gitbook install</li>
-<li>gitbook build &#x9879;&#x76EE;&#x4F4D;&#x7F6E;  &#x751F;&#x6210;&#x4F4D;&#x7F6E;</li>
-</ul>
-</li>
-<li>&#x90E8;&#x7F72;web<ul>
-<li>&#x9759;&#x6001;&#x90E8;&#x7F72;</li>
-<li>&#x7AEF;&#x53E3;&#x6620;&#x5C04; </li>
-</ul>
-</li>
+<li>&#x4F7F;&#x7528;</li>
 </ul>
 <footer class="page-footer"><span class="copyright"><a href="https://beian.miit.gov.cn" target="_blank">&#x8C6B;ICP&#x5907;15006703&#x53F7;-2</a>&#xA0; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x5F53;&#x524D;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
 2021-01-13 22:31:57
@@ -364,12 +376,12 @@
 
             
                 
-                <a href="linux01.html" class="navigation navigation-prev " aria-label="Previous page: 旧笔记本做个人服务器01">
+                <a href="pptp.html" class="navigation navigation-prev " aria-label="Previous page: pptp-vpn">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="nfs.html" class="navigation navigation-next " aria-label="Next page: NFS共享">
+                <a href="frp.html" class="navigation navigation-next " aria-label="Next page: 内网穿透工具-frp">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -380,7 +392,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"gitbook","level":"2.1.2","depth":2,"next":{"title":"NFS共享","level":"2.1.3","depth":2,"path":"linux/nfs.md","ref":"./linux/nfs.md","articles":[]},"previous":{"title":"旧笔记本做个人服务器01","level":"2.1.1","depth":2,"path":"linux/linux01.md","ref":"./linux/linux01.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","tbfed-pagefooter","hide-element","back-to-top-button","code","splitter","-search","search-pro","popup","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"<a href=\"https://beian.miit.gov.cn\">豫ICP备15006703号-2</a>&nbsp;","modify_label":"当前文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"wangfuyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"blog":"http://blog.360club.net","author":"wangfuyu","email":"936466975@qq.com"},"title":"blog.360club.net","language":"zh-hans","links":{"sidebar":{"我的知乎":"https://www.zhihu.com/people/fu-yun-39-30","我的博客园":"https://www.cnblogs.com/crysand/"}},"gitbook":"*","description":"事实不止你看到的那样，还是需要去探索发现的"},"file":{"path":"linux/gitbook.md","mtime":"2021-01-13T14:31:57.591Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-14T13:52:46.645Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"svn","level":"2.1.5","depth":2,"next":{"title":"内网穿透工具-frp","level":"2.1.6","depth":2,"path":"linux/frp.md","ref":"./linux/frp.md","articles":[]},"previous":{"title":"pptp-vpn","level":"2.1.4","depth":2,"path":"linux/pptp.md","ref":"./linux/pptp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","tbfed-pagefooter","hide-element","back-to-top-button","code","splitter","-search","search-pro","popup","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"<a href=\"https://beian.miit.gov.cn\">豫ICP备15006703号-2</a>&nbsp;","modify_label":"当前文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"wangfuyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"blog":"http://blog.360club.net","author":"wangfuyu","email":"936466975@qq.com"},"title":"blog.360club.net","language":"zh-hans","links":{"sidebar":{"我的知乎":"https://www.zhihu.com/people/fu-yun-39-30","我的博客园":"https://www.cnblogs.com/crysand/"}},"gitbook":"*","description":"事实不止你看到的那样，还是需要去探索发现的"},"file":{"path":"linux/subversion.md","mtime":"2021-01-13T14:31:57.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-14T13:52:46.645Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
