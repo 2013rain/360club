@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+# 我的主页
+### 基本信息
+#### [我的介绍]
 
-You can use the [editor on GitHub](https://github.com/2013rain/360club.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+喜欢写代码，PHP、Golang均可以。也喜欢看纸质的书。目前再看《熵增定律》.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-[readme](README.md)
-```markdown
-Syntax highlighted code block
+#### 本站架构
+当前项目纯由MarkDown语法编写。
 
-# Header 1
-## Header 2
-### Header 3
+（gitbook?pdf？do it you want to do）
 
-- Bulleted
-- List
+#### 个人业余爱好
+1. 散步
+2. 乒乓球
+3. 棋牌（三国杀、象棋、五子棋、围棋）
+4. 骑行（2轮摩托走在乡间小路）
+5. 遛娃
 
-1. Numbered
-2. List
+### 目录
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/2013rain/360club.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
