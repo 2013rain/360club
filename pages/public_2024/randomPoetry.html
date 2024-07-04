@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="360club;搜索">
+    <meta name="author" content="936466975@qq.com">
+    <link rel="icon" href="favicon.ico">
+
+    <title>360club</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://v3.bootcss.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+    <script src="https://v3.bootcss.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/stylesheet">
+    body {
+     font-size: 16px;
+     line-height: 1.72857143;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	  <a class="navbar-brand" href="#">诗歌赛跑</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+	    <div class="page-header">
+		    <h1 id="_title" data-val="0">《水调歌头》</h1>
+	    </div>
+	    <div class="form-group form-group-lg">
+		    <div class="col-xs-12">
+			    <button type="button" class="btn btn-primary _s" data-tab="1">随机下一个</button>&nbsp;&nbsp;
+			    <button type="button" class="btn btn-success _s" data-tab="2">再来一首</button>&nbsp;&nbsp;
+			    <button type="button" class="btn btn-info _s" data-tab="3">看内容</button>
+				</p>&nbsp;</p>
+		    </div>
+		   <div class="col-xs-12" style="letter-spacing: 5px;" id="_val">
+		   </div>
+	    </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">@2020.@2021</p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://v3.bootcss.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+       let poetryData=[];
+       let len =0;
+       
+	    $(function(){
+		$.getJSON('./poetryData.json', function(data) {
+			poetryData =data;
+			len =data.length;
+			console.log(data);
+
+
+
+			var randomNumber = Math.floor(Math.random() * 500) + 1; // 生成1到500的随机数
+			var key = randomNumber%len;
+			data2=poetryData[key];
+			console.log(data2);
+			$("#_title").html(data2.title);
+			$("#_title").data("val",key);
+			
+			});
+
+		$("._s").click(function(){
+				var tab = $(this).data("tab");
+				var randomNumber = Math.floor(Math.random() * len) + 1; // 生成1到500的随机数
+				var nowKey = $("#_title").data("val");
+				var key = randomNumber%len;
+
+				if ( tab==1 && key==nowKey ) {
+					var randomNumber = Math.floor(Math.random() * len) + 1; // 生成1到500的随机数
+					var key = randomNumber%len;
+				}
+				if ( tab == 2 ) {
+				   key = (nowKey+1) % len;
+				}
+				if ( tab == 3 ) {
+				    key = nowKey;
+				}
+				console.log(randomNumber)
+				data=poetryData[key];
+				console.log(data);
+
+
+				$("#_title").html(data.title);
+				$("#_title").data("val",key);
+				$("#_val").html("");
+				if (tab == 3 ) {
+
+				$("#_val").html( "<p>"+data.author+"</p><p>"+ data.content + "</p><hr>");
+				}
+				})
+
+
+	    })
+    </script>
+  </body>
+</html>
+

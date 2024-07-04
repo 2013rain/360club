@@ -1,0 +1,11 @@
+{
+  "nav": [
+    {"name":"个人简介","url":"/person/aboutme.html","class":"","curr":"/person"},
+    {"name":"自动诗句","url":"/project/poetry.html","class":"","curr":"/project"}
+  ],
+  "group" :[
+  	 {"name":"待补充","url":"#","class":""},
+  	 {"name":"待补充","url":"#","class":""},
+  	 {"name":"待补充","url":"#","class":""}
+  	]
+}

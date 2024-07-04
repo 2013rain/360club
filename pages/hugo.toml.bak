@@ -1,0 +1,25 @@
+baseURL = 'https://blog.360club.net/'
+languageCode = "zh-cn" #zh-cn # en-us Set language
+title = '我的工具集合'
+contentdir = "content"
+dataDir=                   "data"
+defaultExtension=           "html"
+defaultLayout=            "post"
+publishdir = "public"
+layoutdir = "layouts"
+builddrafts = false
+canonifyurls = true
+enableInlineShortcodes= true
+theme = "liquorice"
+enableGitInfo=false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  description = "Tesla's Awesome Hugo Site"
+  author = "Nikola Tesla"
+
+[buttons]
+  

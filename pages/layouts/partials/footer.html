@@ -1,0 +1,91 @@
+   <footer class="footer">
+      <div class="container">
+        <p class="text-muted">{{ replace $.Site.Params.footer.copyright "{year}" now.Year | markdownify }}</p>
+      </div>
+    </footer>
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.12.4-min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery-1.12.4-min.js"><\/script>')</script>
+    <script src="/js/bootstrap-3.3.7-min.js"></script>
+    <script type="text/javascript">
+        let poetryData=[];
+    </script>
+   {{ range .Site.Data.poetry }}
+   {{ range .data }}
+        <script type="text/javascript">
+
+            oneVal={
+              "title":'{{ .title }}',
+              "author":"{{.author }}",
+              "content":"{{ .content }}",
+        };
+
+        poetryData.push(oneVal);
+        </script>
+   {{ end }}
+        {{ end }}
+   <script type="text/javascript">
+       let len =poetryData.length;
+
+            $(function(){
+	/*
+                $.getJSON('./poetryData.json', function(data) {
+                        poetryData =data;
+                        len =data.length;
+                        console.log(data);
+
+
+
+                        var randomNumber = Math.floor(Math.random() * 500) + 1; // 生成1到500的随机数
+                        var key = randomNumber%len;
+                        data2=poetryData[key];
+                        console.log(data2);
+                        $("#_title").html(data2.title);
+                        $("#_title").data("val",key);
+
+                        });
+*/
+var randomNumber = Math.floor(Math.random() * 500) + 1; // 生成1到500的随机数
+                        var key = randomNumber%len;
+                        data2=poetryData[key];
+                        console.log(data2);
+                        $("#_title").html(data2.title);
+                        $("#_title").data("val",key);
+                $("._s").click(function(){
+                                var tab = $(this).data("tab");
+                                var randomNumber = Math.floor(Math.random() * len) + 1; // 生成1到500的随机数
+                                var nowKey = $("#_title").data("val");
+                                var key = randomNumber%len;
+
+                                if ( tab==1 && key==nowKey ) {
+                                        var randomNumber = Math.floor(Math.random() * len) + 1; // 生成1到500的随机数
+                                         var key = randomNumber%len;
+                                }
+                                if ( tab == 2 ) {
+                                   key = (nowKey+1) % len;
+                                }
+                                if ( tab == 3 ) {
+                                    key = nowKey;
+                                }
+                                console.log(randomNumber)
+                                data=poetryData[key];
+                                console.log(data);
+
+
+                                $("#_title").html(data.title);
+                                $("#_title").data("val",key);
+                                $("#_val").html("");
+                                if (tab == 3 ) {
+
+                                $("#_val").html( "<p>"+data.author+"</p><p>"+ data.content + "</p><hr>");
+                                }
+                                })
+
+
+            })
+    </script>
+  </body>
+</html>                                       
+                                        

@@ -1,0 +1,31 @@
+---
+# 360club
+baseURL: https://blog.360club.net/
+languageCode: zh-cn
+title: 360club
+contentdir: content
+dataDir: data
+defaultExtension: html
+defaultLayout: post
+publishdir: public 	# 站点静态文件保存目录
+layoutdir: layouts
+uglyURLs:   true
+relativeURLs:  true
+canonifyURLs:   false
+enableInlineShortcodes: true
+theme: liquorice
+enableGitInfo: false
+enableEmoji: true
+enableRobotsTXT: true
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+permalinks: #访问博客网址显示形式
+#  #posts: "post/:title"
+    
+params:
+  footer:
+    copyright : "本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容 <br/>&copy; 2024 - {year} "

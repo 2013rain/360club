@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="360club;搜索">
+    <meta name="author" content="936466975@qq.com">
+    <link rel="icon" href="favicon.ico">
+
+    <title>360club</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://v3.bootcss.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="https://v3.bootcss.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://v3.bootcss.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	  <a class="navbar-brand" href="#">360club</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="http://26q2584t80.wicp.vip/">别名</a></li>
+            <li><a href="http://360club.picp.net/">同名</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">收藏 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.wangfuyu.com.cn/">个人链接</a></li>
+                <li><a href="http://www.360club.net/">还有一个</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">内部导航</li>
+                <li><a href="#">个人收藏</a></li>
+                <li><a href="#">阅读</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+	    <div class="page-header">
+		    <h1>HAVE A TRY</h1>
+	    </div>
+	    <div class="form-group form-group-lg">
+		    <div class="col-xs-12">
+			    <input class="form-control" type="text" id="formGroupInputLarge" placeholder="search word">
+			    <p>&nbsp;</p>
+			    <button type="button" class="btn btn-primary _s" data-url="https://www.baidu.com/s?wd=">百度一下</button>&nbsp;
+			    <button type="button" class="btn btn-success _s" data-url="https://www.so.com/s?q=">360搜索</button>&nbsp;
+			    <button type="button" class="btn btn-info _s" data-url="https://www.google.com/search?q=">Google搜索</button>
+		    </div>
+	    </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">@2020.@2021</p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://v3.bootcss.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+	    $(function(){
+
+		    $("._s").click(function(){
+			    tarUrl = $(this).data("url");
+			    word = $("#formGroupInputLarge").val();
+			    word = encodeURIComponent(word);
+			    window.open(tarUrl+word,'_blank');
+		    })
+
+
+	    })
+    </script>
+  </body>
+</html>
+
