@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - jekyll-pages
-      - master
     paths-ignore:
       - .gitignore
       - README.md
