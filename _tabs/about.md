@@ -18,7 +18,7 @@ order: 4
         <td  style="border:0;text-align:left"><b>姓名：</b></td>
       <td  style="border:0;text-align:left">王富雨</td>
         <td  style="border:0;text-align:left"><b>求职意向：</b></td>
-      <td  style="border:0;text-align:left">go开发、架构师、项目管理</td>
+      <td  style="border:0;text-align:left">Go研发工程师、系统架构师</td>
     </tr>
    <tr style="border:0;">
        <td  style="border:0;text-align:left"><b>电话：</b></td>
@@ -51,14 +51,16 @@ order: 4
 
 ## 个人技能
 
-- 熟练Go编程开发，**近7年一直从事go开发**，熟悉相关语言框架Xorm、Gorm、Gin。
-- 熟悉 k8s、Docker使用，熟练linux操作。
-- 熟悉Html+Css+Js。
-- 熟练使用 MySQL/TiDB，Redis，Kafka。
-- 从事过电商O2O，书城阅读、网赚、广告投放、企业SAAS相关工作。
-- 使用过Es，Kibana。
-- **把控过项目从0到1的选型、搭建、开发、发布、上线整个流程。**
+- 熟练Go编程开发，了解GMP模型，能熟悉使用框架Gin、Gorm、Redis。
+- 熟悉 K8S、Docker技术，能熟练操作Linux。
+- 了解前端技术栈，例如Html+Css+Js。
+- 能熟练操作 MySQL/TiDB，Redis，Kafka。
+- 有电商O2O，书城阅读、网赚活动、广告投放、企业SAAS相关开发经验。
+- 熟悉Es，Kibana使用。
+- 主导过项目的整个系统架构，把控过项目从0到1的需求评审、技术选型、框架搭建、开发、发布、上线整个流程。
 - 熟悉代码review规范。
+- 了解设计原则与设计模式。
+- 熟悉单元测试，了解Mock技术。
 
 
 
